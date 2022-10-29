@@ -1,8 +1,4 @@
 template <class T>
-void BSTree<T>::printFlat()
-{
-    printFlatInternal(tRoot, 5);
-}
 /* prints the tree vertically
  * First, a string is generated for each line. Because this results in very wide trees, the second part of the function makes it so that the space between each node is equal to GAP
  *
