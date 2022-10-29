@@ -1,5 +1,5 @@
 template <class T>
-void BinarySearchTree<T>::printRohit(){
+void BSTree<T>::printRohit(){
 /* Created by Rohit Jaganathan for Professor Hrycewicz's CS 20 class on 11/27/2020
  *
  * Prints the tree vertically
@@ -89,7 +89,7 @@ void BinarySearchTree<T>::printRohit(){
  * print now contains the string with this level's nodes
  */
 template <class T>
-void BinarySearchTree<T>::printRohitLevel(Treenode<T>* node, int x, int level, int height, string& print, const int WIDTH){
+void BSTTree<T>::printRohitLevel(Treenode<T>* node, int x, int level, int height, string& print, const int WIDTH){
 	if(node == nullptr){		//this node is empty so generates enough spaces based on which level the node is located on in relation to the level that must be printed and the height of the tree
 		for(int i=0; i< WIDTH*pow(2,height+1-level+x); i++)
 			print+= " ";
